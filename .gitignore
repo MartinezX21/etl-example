@@ -1,24 +1,56 @@
-# Compiled class file
-*.class
+# Java (Spring Boot) Project - camel
 
-# Log file
+camel/target/
+camel/bin/
+camel/*.log
+camel/build/
+camel/.gradle/
+camel/.idea/
+camel/out/
+
+# IntelliJ IDEA (if used for Java project)
+.idea/
+
+# Node.js Project - sink-api
+
+sink-api/node_modules/
+sink-api/.cache/
+sink-api/dist/  # Or build folder if applicable
+sink-api/*.log
+sink-api/.env # Sensitive configuration - NEVER commit this
+sink-api/package-lock.json # If you use npm, include this. If you use yarn, use yarn.lock
+sink-api/yarn.lock # If you use yarn, include this. If you use npm, use package-lock.json
+
+
+# General Project Files
+
+.DS_Store  # macOS
+Thumbs.db   # Windows
+.env        # Sensitive configuration - NEVER commit this
+*.iml       # IntelliJ IDEA project files
+.ipr       # IntelliJ IDEA project files
+.iws       # IntelliJ IDEA project files
+.project   # Eclipse project files
+.classpath  # Eclipse project files
+.settings/ # Eclipse project files
+*.swp       # Swap files (Vim, etc.)
+*~          # Backup files (editor specific)
+# Logs
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
+# Temporary files
+*.tmp
+# OS related files
+.localized
+.AppleDouble
+# Archives
 *.zip
-*.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+*.7z
+*.tar
+*.gz
+# Package Managers (.idea folder should be ignored in most cases)
+.idea/shelf/
+.idea/workspace.xml
+# Other
+.vscode/ # If you're using VS Code, this would exclude settings.
+.DS_Store # macOS
